@@ -1,7 +1,7 @@
 /*
  * This file is part of the OpenNMS(R) Application.
  *
- * OpenNMS(R) is Copyright (C) 2007 The OpenNMS Group, Inc. All rights reserved.
+ * OpenNMS(R) is Copyright (C) 2007-2008 The OpenNMS Group, Inc. All rights reserved.
  * OpenNMS(R) is a derivative work, containing both original code, included code and modified
  * code that was published under the GNU General Public License. Copyrights for modified
  * and included code are below.
@@ -31,7 +31,7 @@
  *      http://www.opennms.org/
  *      http://www.opennms.com/
  */
-package org.opennms.netmgt.ticketd;
+package org.opennms.api.integration.ticketing;
 
 /**
  * OpenNMS Trouble Ticket Plugin API
@@ -40,7 +40,7 @@ package org.opennms.netmgt.ticketd;
  * @author <a href="mailto:david@opennms.org">David Hustace</a>
  *
  */
-public interface TicketerPlugin {
+public interface Plugin {
     
     /**
      * DAO like get method to be implemented by HelpDesk specific
