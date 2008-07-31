@@ -11,6 +11,9 @@
     <system>Bugzilla</system>
     <url>http://bugs.opennms.org/</url>
   </issueManagement>  
+  <modules>
+   <module>api</module>
+  </modules>
   <developers>
     <developer>
       <id>brozow</id>
