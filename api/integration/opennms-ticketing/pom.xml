@@ -22,15 +22,6 @@
           <target>1.5</target> 
         </configuration> 
       </plugin> 
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <configuration>
-          <preparationGoals>clean install</preparationGoals>
-          <arguments>-Dmaven.test.skip.exec=true</arguments>
-          <tagBase>https://opennms.svn.sourceforge.net/svnroot/opennms/org/opennms/api/integration/ticketing/tags</tagBase>
-        </configuration>
-      </plugin>
     </plugins> 
   </build> 
   <pluginRepositories>
@@ -40,10 +31,9 @@
       <url>http://repo.opennms.org/releases</url>
     </pluginRepository>
   </pluginRepositories>
-
   <scm>
-    <connection>scm:svn:https://opennms.svn.sourceforge.net/svnroot/opennms/org/opennms/api/integration/ticketing/trunk</connection>
-    <developerConnection>scm:svn:https://opennms.svn.sourceforge.net/svnroot/opennms/org/opennms/api/integration/ticketing/trunk</developerConnection>
-    <url>http://opennms.svn.sourceforge.net/viewvc/opennms/org/opennms/api/integration/ticketing/trunk</url>
+    <connection>scm:svn:http://opennms.svn.sourceforge.net/svnroot/opennms/platform/trunk/api/integration/opennms-ticketing</connection>
+    <developerConnection>scm:svn:https://opennms.svn.sourceforge.net/svnroot/opennms/platform/trunk/api/integration/opennms-ticketing</developerConnection>
+    <url>http://opennms.svn.sourceforge.net/viewvc/opennms/platform/trunk/api/integration/opennms-ticketing</url>
   </scm>
 </project>
