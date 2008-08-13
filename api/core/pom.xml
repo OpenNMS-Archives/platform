@@ -12,6 +12,6 @@
   <name>OpenNMS API: Core</name>
   <url>http://www.opennms.org/</url>
   <modules>
-    <module>opennms-ticketing</module>
+    <!-- <module>opennms-ticketing</module> -->
   </modules>
 </project>
