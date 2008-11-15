@@ -54,15 +54,15 @@ public class Ticket {
      */
     public enum State {
         /**
-         * Ticket is concidered to be in an Open State in the HelpDesk system.
+         * Ticket is considered to be in an Open State in the HelpDesk system.
          */
         OPEN,
         /**
-         * Ticket is concidered to be in a Canceled State in the HelpDesk system.
+         * Ticket is considered to be in a Canceled State in the HelpDesk system.
          */
         CANCELLED,
         /**
-         * Ticket is concidered to be in an Closed State in the HelpDesk system.
+         * Ticket is considered to be in an Closed State in the HelpDesk system.
          */
         CLOSED
     }
