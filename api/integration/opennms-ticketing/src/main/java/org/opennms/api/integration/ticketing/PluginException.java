@@ -10,7 +10,7 @@
  *
  * Modifications:
  * 
- * Created: May 10, 2007
+ * Created: November 7th, 2008
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -34,29 +34,31 @@
 package org.opennms.api.integration.ticketing;
 
 /**
- * OpenNMS Trouble Ticket Plugin API
- * 
- * @author <a href="mailto:brozow@opennms.org">Mathew Brozowski</a>
- * @author <a href="mailto:david@opennms.org">David Hustace</a>
+ * Exception used to indicate failure of a Ticketing Plugin
+ * when updating a remote trouble ticket system
+ *
+ * @author <a href="mailto:jonathan@opennms.org">Jonathan Sartin</a>
  *
  */
-public interface Plugin {
-    
-    /**
-     * DAO like get method to be implemented by HelpDesk specific
-     * plugin.
-     * 
-     * @param ticketId
-     * @return
-     */
-    public Ticket get(String ticketId) throws PluginException;
-    
-    /**
-     * DAO like saveOrUpdate method to be implemented by HelpDesk specific
-     * plugin.
-     * 
-     * @param ticket
-     */
-    public void saveOrUpdate(Ticket ticket) throws PluginException;
+
+public class PluginException extends Exception {
+
+	private static final long serialVersionUID = 1L;
+
+	public PluginException() {
+		super();
+	}
+
+	public PluginException(String message) {
+		super(message);
+	}
+
+	public PluginException(Throwable cause) {
+		super(cause);
+	}
+
+	public PluginException(String message, Throwable cause) {
+		super(message, cause);
+	}
 
 }
